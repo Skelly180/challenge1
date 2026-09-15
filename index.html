@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<header>
+    <nav>
+        <img class="logo" src="img/logo.png" alt="Geen foto gevonden!">
+        <button type="button" class="collapsible">Menu</button>
+        <div class="content">
+            <div class="center">
+                <img class="symbol" src="img/home.png">
+                <a href="index.html">Home</a>
+                <img class="symbol" src="img/aboutUs.png">
+                <a href="overOns.html">Over ons</a>
+                <img class="symbol" src="img/store.png">
+                <a href="producten.html">Producten</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <h1>
+        High-end Gaming Gear
+    </h1>
+    <h2>
+        In Breda
+    </h2>
+    <div class="top">
+        <p>
+            Bij LevelUp Hardware draait alles om performance. 
+            Of je nu op zoek bent naar een nieuwe laptop die de nieuwste AAA-titels moeiteloos draait, 
+            of je huidige rig een professionele onderhoudsbeurt nodig heeft; wij staan voor je klaar. <br><br>
+            In onze fysieke winkel kombineren we de nostalgische sfeer van de jaren '80 arcades met de brute kracht van de hardware van morgen. <br><br>
+            Waarom kiezen voor ons?
+        </p>
+        <img src="img/laptop.webp" alt="Geen foto gevonden!">
+    </div>
+    <div class="bottom">
+        <img src="img/storefront.png" alt="Geen foto gevonden!">
+        <p>
+            • Curated Selectie: Wij verkopen alleen laptops waar wij zelf achter staan.
+            Geen concessies op bouwkwaliteit of koeling.<br>
+            • Expert Onderhoud: Van het vervangen van koelpasta tot complexe hardware-upgrades;
+            wij verlengen de levensduur van je machine.<br>
+            • Persoonlijk advies: Geen standaard verkooppraatjes, maar eerlijk advies gebaseerd op jouw favoriete games en workflow.
+        </p>
+    </div>
+</body>
+</html>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>

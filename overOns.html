@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<header>
+    <nav>
+        <img class="logo" src="img/logo.png" alt="Geen foto gevonden!">
+        <button type="button" class="collapsible">Menu</button>
+        <div class="content">
+            <div class="center">
+                    <img class="symbol" src="img/home.png">
+                    <a class="link" href="index.html">Home</a> 
+                    <img class="symbol" src="img/aboutUs.png">
+                    <a class="link" href="overOns.html">Over ons</a>
+                    <img class="symbol" src="img/store.png">
+                    <a class="link" href="producten.html">Producten</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <h1>
+        Over Ons
+    </h1>
+    <h2>
+        LevelUp Hardware
+    </h2>
+    <div class="bottom">
+        <p class="text">
+            Welkom bij Level Up Hardware, de plek waar al jouw gaming-dromen werkelijkheid worden.
+            Als eigenaar en drijvende kracht achter deze zaak, is Daan meer dan alleen een ondernemer;
+            hij is een gamer in hart en nieren en een absolute hardware-enthousiasteling. <br><br>
+            Al sinds zijn tienerjaren, omringd door de gloed van CRT-schermen en pulserende beat van synthwave,
+            sleutelde Daan aan zijn eigen gaming-rigs. Wat begon als een hobby - het finetunen van elk component voor die extra frames per seconde,
+            het optimaliseren van koelsystemen voor piekprestatie - groeide al snel uit tot een diepgewortelde passie. <br><br>
+            Jouw game is zijn prioriteit <br> <br>
+            Of je nu de grenzen van virtual reality verkent, in de competitie verband strijdt om de hoogste rang, of gewoon wilt genieten van adembenemende single-player avonturen:
+            Daan en zijn team zorgen ervoor dat je hardware je nooit in de steek laat.
+            Hij gelooft dat een perfect afgestelde machine het verschil maakt tussen gewoon gamen en echt domineren.
+        </p>
+        <img src="img/daan.jpg" alt="Geen foto gevonden!">
+    </div>
+</body>
+</html>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
