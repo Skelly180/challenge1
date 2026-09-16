@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -15,16 +17,18 @@
         <button type="button" class="collapsible">Menu</button>
         <div class="content">
             <div class="center">
-                    <img class="symbol" src="img/home.png">
-                    <a class="link" href="index.html">Home</a> 
-                    <img class="symbol" src="img/aboutUs.png">
-                    <a class="link" href="overOns.html">Over ons</a>
-                    <img class="symbol" src="img/store.png">
-                    <a class="link" href="producten.html">Producten</a>
+                <img class="symbol" src="img/home.png">
+                <a href="index.html">Home</a>
+                <img class="symbol" src="img/aboutUs.png">
+                <a href="overOns.html">Over ons</a>
+                <img class="symbol" src="img/store.png">
+                <a href="producten.html">Producten</a>
             </div>
         </div>
+        <a class="nieuwsbrief" href="">Schrijf je in voor de nieuwsbrief!</a>
     </nav>
 </header>
+
 <body>
     <h1>Producten</h1>
     <h2>Voor de Serieuze Gamer</h2>
@@ -65,21 +69,22 @@
         </div>
     </div>
 </body>
+
 </html>
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
     }
-  });
-}
 </script>
