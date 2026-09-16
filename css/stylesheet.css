@@ -43,7 +43,7 @@ footer h1{
     color: rgb(201, 201, 255);
 }
 
-body img {
+main img {
     height: 200px;
     padding: 10px;
     border-radius: 25px;
@@ -148,7 +148,7 @@ p {
     margin-bottom: 20px;
 }
 
-body {
+main {
     background-color: #23272e;
 }
 
